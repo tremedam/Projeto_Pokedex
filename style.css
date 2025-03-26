@@ -1,0 +1,85 @@
+/* Para estilizar a Pokédex. -*/
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.pokedex-content {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    color: white;
+}
+.pokedex {
+    background: url('./IMGPokedex/pokedexm.png') no-repeat center center;
+    background-size: cover;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.1);
+    width: 450px;
+    height: 700px;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 50px;
+    border: 2px solid #000000;
+}
+
+input {
+    padding: 10px;
+    width: 70%;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #ff0000;
+    color: white;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #cc0000;
+}
+
+#pokemonName {
+    font-size: 24px;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0,0,0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#pokemonInfo {
+    margin-top: 20px;
+}
+
+.pokemon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.pokemon-images {
+    flex: 1;
+    text-align: center;
+}
+.pokemon-details {
+    flex: 2;
+    text-align: left;
+}
+
+.pokemon-images img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 50% auto;
+}

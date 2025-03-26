@@ -1,0 +1,19 @@
+<!-- Estrutura principal da página. -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset= "UTF-8">
+        <meta name="viewport" content="width=device-witch, initial-scale=1.0">
+        <title>Pokédex</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="pokedex">
+            <h1>Pokedex</h1>
+            <input type="text" id="pokemonInput" placeholder="Digite o nome ou número do Pokémon" onkeydown="handleKeyPress(event)">
+            <button onclick="searchPokemon()">Buscar</button>
+            <div id="pokemonInfo"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
