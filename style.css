@@ -20,18 +20,35 @@ main {
 
 /* Para estilizar o container de Pokemons do site */
 #pokemon-container {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
+    gap: 16px;
 }
 
 /* Para estilizar os cards de pokemon */
 .pokemon-card {
-    background-color: white;
+    width: 300px;
+    padding: 20px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    padding: 1rem;
+    background-color: #f9f9f9;
     text-align: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.pokemon-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.6;
 }
 
 /* Para estilizar os mecanismos de pesquisa */
