@@ -20,9 +20,11 @@ main {
 
 /* Para estilizar o container de Pokemons do site */
 #pokemon-container {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
+    gap: 16px;
 }
 
 /* Para estilizar os cards de pokemon */
@@ -30,8 +32,8 @@ main {
     width: 300px;
     padding: 20px;
     margin: 10px auto;
-    border: 2px solid #ccc;
-    border-radius: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
     background-color: #f9f9f9;
     text-align: center; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
