@@ -51,10 +51,12 @@ Durante o desenvolvimento deste projeto, estou praticando:
    git clone https://github.com/seu-usuario/pokedex.git
 2. Abra o arquivo index.html no seu navegador.
 
-🙋‍♂️ Contribuindo
+## 🙋‍♂️ Contribuindo
+
 Sinta-se à vontade para abrir issues, sugerir melhorias ou enviar pull requests. Toda ajuda é bem-vinda, especialmente se você também estiver aprendendo! 🥷
 
-⭐ Agradecimentos
+## ⭐ Agradecimentos
+
 Obrigado por visitar meu projeto! Se você curtiu, deixe uma estrela no repositório. Isso me ajuda muito a continuar aprendendo e compartilhando!
 
 Projeto criado com carinho e empenho por Thiago F.S Dias 🤟👍
