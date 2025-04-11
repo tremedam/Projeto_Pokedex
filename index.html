@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pokedex</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <Body>
-        <header>
-            <h1>Pokedex</h1>
-            <div id="search-bar">
-                <input type="text" id="search-input" placeholder="Digite o nome ou número do Pokemon">
-                <button id="search-button">Pesquisar</button>
-            </div>
-        </header>
-        <main>
-            <div id="pokemon-container"></div>
-        </main>
-        <script src="script.js"></script>
-    </Body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pokedex</h1>
+        <div id="search-bar">
+            <input 
+                type="text" 
+                id="search-input" 
+                placeholder="Digite o nome ou número do Pokémon" 
+                aria-label="Digite o nome ou número do Pokémon"
+            >
+            <button id="search-button" aria-label="Pesquisar Pokémon">Pesquisar</button>
+        </div>
+    </header>
+    <main>
+        <div id="pokemon-container" aria-live="polite"></div>
+    </main>
+    <div id="form-modal" class="modal" style="display: none;" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-content">
+            <h2 id="modal-title">Selecione uma variedade para o Pokémon</h2>
+            <div id="form-options"></div>
+            <button id="confirm-button" aria-label="Confirmar seleção">Confirmar</button>
+            <button id="cancel-button" aria-label="Cancelar seleção">Cancelar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
