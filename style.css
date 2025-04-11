@@ -7,18 +7,60 @@ body {
     color: #333;
 }
 
-h1, h2 {
-    margin: 0;
-}
-
-/* ===== Header ===== */
+/* Tema claro para o header */
 header {
-    background-color: #ef5350;
+    background-color: #ef5350; /* Vermelho */
     color: white;
     text-align: center;
     padding: 1rem 0;
 }
 
+/* Tema escuro para o body */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+/* Estilo para modal */
+.modal-content {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+}
+
+body.dark-theme .modal-content {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+}
+
+/* Botões */
+button {
+    background-color: #888585; /* Cinza mais claro */
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #444; /* Cinza escuro */
+}
+
+/* Botões no tema escuro */
+body.dark-theme button {
+    background-color: #888585; /* Cinza mais claro */
+    color: #ffffff;
+}
+
+body.dark-theme button:hover {
+    background-color: #444; /* Cinza escuro */
+}
+
+/* Barra de busca */
 #search-bar {
     display: flex;
     justify-content: center;
@@ -37,7 +79,7 @@ header {
 #search-button {
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    background-color: #ef5350;
+    background-color: #c01f1c;
     color: white;
     border: none;
     border-radius: 4px;
@@ -91,6 +133,16 @@ main {
     margin: 5px 0;
     font-size: 14px;
     line-height: 1.6;
+}
+
+/* Tema escuro para os cards */
+body.dark-theme .pokemon-card {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+}
+
+body.dark-theme .pokemon-card p {
+    color: #ffffff;
 }
 
 /* ===== Modal ===== */
