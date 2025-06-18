@@ -10,6 +10,7 @@ const modal = document.getElementById('form-modal');
 const formOptions = document.getElementById('form-options');
 const confirmButton = document.getElementById('confirm-button');
 const cancelButton = document.getElementById('cancel-button');
+const themeToggleButton = document.getElementById('theme-toggle');
 
 // Tradução de tipos de Pokémon
 const typeTranslations = {
@@ -33,6 +34,13 @@ const typeTranslations = {
     fairy: 'Fada',
     unknown: 'Desconhecido',
 };
+
+document.addEventListener('DOMContentLoaded', () => {
+    const body = document.body;
+    themeToggleButton.addEventListener('click', () => {
+        body.classList.toggle('dark-theme');
+    });
+});
 
 // Função principal para inicializar a Pokedex
 async function initializePokedex() {
