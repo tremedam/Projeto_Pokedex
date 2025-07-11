@@ -1,45 +1,28 @@
-// Configurações e constantes
-const API_BASE_URL = 'https://pokeapi.co/api/v2';
-const INITIAL_LOAD_LIMIT = 10;
+// --------------------------------Importações de UI-------------------------------------
+// Import necessário para o funcionamento de APIs
+import { 
+    API_BASE_URL, 
+    INITIAL_LOAD_LIMIT 
+} from './api.js';
 
+
+// --------------------------------Importações de UI-------------------------------------
 // Seletores de elementos HTML
-const pokemonContainer = document.getElementById('pokemon-container');
-const searchInput = document.getElementById('search-input');
-const searchButton = document.getElementById('search-button');
-const modal = document.getElementById('form-modal');
-const formOptions = document.getElementById('form-options');
-const confirmButton = document.getElementById('confirm-button');
-const cancelButton = document.getElementById('cancel-button');
-const themeToggleButton = document.getElementById('theme-toggle');
-
-// Tradução de tipos de Pokémon
-const typeTranslations = {
-    normal: 'Normal',
-    fire: 'Fogo',
-    water: 'Água',
-    eletric: 'Elétrico',
-    grass: 'Grama',
-    ice: 'Gelo',
-    fighting: 'Lutador',
-    poison: 'Venenoso',
-    ground: 'Terra',
-    flying: 'Voador',
-    psychic: 'Psíquico',
-    bug: 'Inseto',
-    rock: 'Pedra',
-    ghost: 'Fantasma',
-    dragon: 'Dragão',
-    dark: 'Sombrio',
-    steel: 'Aço',
-    fairy: 'Fada',
-    unknown: 'Desconhecido',
-};
+import {
+  pokemonContainer,
+  searchInput,
+  searchButton,
+  modal,
+  formOptions,
+  confirmButton,
+  cancelButton,
+  setupThemeToggle,
+  themeToggleButton,
+  typeTranslations
+} from './ui.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-    const body = document.body;
-    themeToggleButton.addEventListener('click', () => {
-        body.classList.toggle('dark-theme');
-    });
+    setupThemeToggle(themeToggleButton);
 });
 
 // Função principal para inicializar a Pokedex
