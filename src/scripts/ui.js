@@ -166,9 +166,11 @@ export function showFormSelectionModal(pokemonName, varietyNames) {
     });
 }
 
+
 // Função para fechar o modal
 export function closeModal() {
-    modal.style.display = 'none';
+  document.getElementById('form-modal').style.display = 'none';
+  document.querySelector('.modal-overlay').style.display = 'none';
 }
 
 // Função para traduzir tipos de Pokémon
