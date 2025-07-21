@@ -1,0 +1,28 @@
+/* ===== Reset e Fontes ===== */
+* {
+    font-family: 'Roboto', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f8fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+/* Responsividade do container principal */
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}

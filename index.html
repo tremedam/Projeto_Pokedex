@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/global.css">
 </head>
 <body>
     <header>
@@ -23,6 +24,7 @@
     <main>
         <div id="pokemon-container" aria-live="polite"></div>
     </main>
+    <div class="modal-overlay" style="display: none;"></div>
     <div id="form-modal" class="modal" style="display: none;" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
         <div class="modal-content">
             <h2 id="modal-title">Selecione uma variedade para o Pokémon</h2>
@@ -31,6 +33,6 @@
             <button id="cancel-button" aria-label="Cancelar seleção">Cancelar</button>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script type="module" src="./src/scripts/script.js"></script>
 </body>
 </html>
